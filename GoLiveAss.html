@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Gaming></title>
+<style> 
+/*PAGE BACKGROUND*/
+
+body{
+    background-color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navigation bar */
+
+.nv{
+    color:purple;
+        position: absolute;
+        top: 5px;
+        right: 50px;
+        font-size: 50px;
+}
+
+/* FOR REGISTER*/ 
+
+    .regis{
+        color:purple;
+        padding: 10px 25px;
+        position: absolute;
+        border: 1px solid purple;
+        top: 20px;
+        right: 150px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+/* DETAILS AND PRICE OF THE GAME*/
+
+    .box{
+        border: hidden;
+        margin-left:400px ;
+        margin-right: 400px;
+        background-color: seashell;
+        text-align: center; 
+        padding:10px;
+    }
+
+/*CARD PICS INSERT*/
+
+.card{
+    width:160px;
+    padding: 10px;
+    border: hidden;
+    margin-left: 500px;
+}
+
+/*SELECT YOUR REGION*/
+
+.sel{
+    border: solid blueviolet;
+    background-color: blueviolet;
+    width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 1000px;
+    right: 570px;
+}
+.triangle-right {
+	border-top: 5px solid transparent;
+	border-left: 10px solid white;
+	border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 1030px;
+    left: 550px;
+}
+.triangle-left {
+	border-top: 5px solid transparent;
+	border-right: 10px solid white;
+	border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 1030px;
+    right:580px;
+}
+
+/*SELECT REGION  BACKGROUND */
+
+.det{
+    background-color: white;
+    height: 900px;
+}
+
+/* SELECT REGION DETAILS*/
+
+.reg{
+    position: relative;
+    margin-left: 100px; 
+    background-image: url(images/Leaderboard_Desktop.svg); 
+    width: 1060px; 
+    height: 45px;
+}
+
+/* NUMBER SERIES IN SELECT REGION*/
+
+.cir{
+    position: absolute;
+    top: 30%;
+    left:10px;
+    border:hidden;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    width:50px;
+}
+
+  /*    NUMBER SERIES SELECTION REGION*/
+
+.d{
+    position: absolute;
+    top: 60%;
+    left:30px;
+    font-size:30px;
+}
+
+/* FONT POSITION DETAILS*/
+
+.fo{
+    position: absolute;
+    top:5%;
+    left:20px;
+}
+
+/* 1570 POSITION */
+
+.dp{
+    position: absolute;
+    top:60%;
+    left:950px;
+}
+
+/* HEADING BORDER DETAILS*/
+
+.boh{
+    border-left:5px solid purple;
+    text-indent: 20px; 
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+/*SCHEDULE BACKGROUND */
+
+.sc{
+   background-color:white;
+   height: 590px;
+}
+
+/*TOURNAMENT SCHEDULE DETAIL DESIGN*/
+
+.tou{
+    margin-left: 300px; 
+    background-image: url(images/Schedule_Desktop.svg); 
+    width: 850px; 
+    height: 45px; 
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+ /* I AM GAME DETAILS*/
+
+.gm{
+    font-size: 25px;
+     position: absolute;
+     margin-left: 620px;
+     padding-top: 20px; 
+     color: blueviolet;
+}
+/*  QUESTION DETAILS FEATURE DESAIN*/
+
+.qu{
+    background-image: url(images/Leaderboard_Desktop.svg);
+    text-align:10px;
+    width: 1060px; 
+    height: 45px; 
+    padding-top: 25px;
+    margin-left: 100px;
+}
+
+/* TEXT COLOR ANS PADDING DETAILS OF FREQUENCY ASKED QUESTIONS */
+
+.tc{
+    color:purple;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+/* GAME PRODUCTS BACKGROUND */
+
+.pb{
+    background-color: white;
+    width: 350px;
+}
+
+/* GAME PRODUCTS ORDER DETAILS  PLAYERS GALLERY SEQUENCE DESIN DETAILS*/
+
+.responsive {
+  padding: 4px;
+  float: left;
+  width: 390px;
+}
+
+/*GAME PRODUCTS POSITION*/
+
+.gallery {                 
+  border: hidden;
+  margin-left: 40px;
+}
+
+/* FEATURED PLAYERS BACKGROUND */
+
+.fpb{
+    background-image: url(images/FeaturedPlayers_Desktop.jpeg);
+    height: 400px;
+    margin-top: 400px;
+    padding-top: 10px;
+}
+
+/* FEATURED PLAYERS BRODER  */
+
+.fboh{
+    border-left:5px solid blueviolet;
+    text-indent: 20px; 
+    margin-left: 50px;
+    margin-top: 60px;
+}
+/*FEATURED PLAYERS DATA DETAILS*/
+
+.bg{
+    background-color: white;
+    width: 300px;
+    margin-left: 30px;
+    padding: 20px 0px;
+}
+
+/* FEATURED ARTICLES */
+
+.responsive-ar {
+  padding: 5px;
+  float: left;
+}
+
+/* BACKGROUND */
+
+.abg{
+    border: hidden;
+    width: 430px;
+    height: 400px;
+    margin-left: 40px;
+    background-color: white;
+}
+
+/* DATE DETAILS*/
+
+.dt{
+    border: solid darkviolet;
+    background-color:darkviolet;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin-left: 35px;  
+}
+
+/* PAGE BOTTOM BACKGROUND */
+
+.container {
+  position: relative;
+}
+
+/* BOTTOM PAGE LOGO*/
+
+.text-logo {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+}
+
+.text1 {                      /* index in bottom page */
+  position: absolute;
+  top: 77%;
+  left: 20%;
+  color: white;
+  font-size: 18px;
+}
+
+.text2 {                   /*TERMS  DETAILS IN BOTTOM PAGE*/
+  position: absolute;
+  top: 85%;
+  left: 25%;
+  color: white;
+  font-size: 14px;
+}
+.pr{
+    border-left: solid blueviolet;
+}
+</style> 
+</head>
+<body>
+    <!--------------           LOGO ON TO LEFT             ---------------------------------->
+
+    <img  src="images/GoGame_Logo-01.png" width="200px">
+    <div class="nv">&#9868;</div>
+
+<!-----------------           REGISETR ICON ON TOP RIGHT AND NAVIGATION BAR          ------------------------>
+
+   <div class="regis">REGISTER</div>
+    <br>
+
+   <!---------------             PARTNER DETAILS             ---------------------------->
+
+   <img src="images/CEAT-Banner_Desktop.jpeg" width="1500px" height="400px">
+   <img style="position: absolute; top: 80px ; right: 640px;" src="images/Logo_Desktop.png" width="280px"><br>
+   <img style="position: absolute; top: 325px ; right: 780px;"src="images/Login_UpperLogo1.png" width="150px">
+   <img style="position: absolute; top: 325px ; right: 620px;"src="images/Login_UpperLogo2.png" width="150px">
+   <pre style="color: white;position: absolute; top: 370px ; right: 640px; font-size: 12px;">PLATFORM PARTNER        LIFESTYLE PARTNER</pre>
+
+<!---------------               PLAY NOW BUTTON POSITION SETTING               ------------------------------------>
+
+   <img style="border: hidden;position: absolute;top: 450px;  margin-left: 678px;" src="images/Schedule_Mobile.svg" width="150px">
+    <h2 style="color: blueviolet; position: absolute;top: 440px;  margin-left: 689px;">PLAY NOW</h2>
+
+   <br>
+   <br>
+
+<!-----------------        DETAILS AND PRICE OF THE GAME               -------------------------------->
+
+    <div class="box">
+    <h3  style="color:purple;">STARTS 25TH APRIL 2020 / 16:00 / HYDERABAD</h3>
+    <pre> $150k            4v4         1570*           PC</h3></pre>
+   <pre><h3  style="color:purple;">PRICE MONEY    PLAY MODE     TEAMs      PLATFLOM</h3></pre>
+    </div>
+    <br>
+
+    <!---------------                CARD DETAILS                ----------------->
+
+    <h1 style="text-align: center;">TOURNAMENT LEADERBOARD</h1><br>
+    <img class="card" src="images/GameCard1.png" >
+    <img style="margin-left: 50px;" src="images/GameCard2.png">
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!---------------------            SELECTION BACKGROUND DETAILS REGION        ------------------------>
+
+    <div class="sel">
+    <h3 style="color: white; text-align: center;">SELECT YOUR REGION</h3>
+    </div>
+    <div class="triangle-right"></div>
+    <div class="triangle-left"></div>
+
+<!---------------              REGIONAL DETAILS                 -------------------->
+<div class="det">
+    <br>
+    <br>
+
+     <!----------------------------             1ST REGION                      ---------------------------->
+    <div class="reg">
+        <img src="images/Leaderboard_Desktop.svg">
+            <div class="cir" style="background-color: yellow;">1</div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+        </div>
+        </pre>
+        <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+  </div>
+  <!----------------------------             2ND REGION                      ---------------------------->
+  <br>
+  <br>
+  <br>
+  <div class="reg">
+    <img src="images/Leaderboard_Desktop.svg">
+        <div class="cir" style="background-color: slategray;">2</div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+    </div>
+    </pre>
+    <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+</div>
+<!--------------------------        3RD REGION           -------------------------->
+<br>
+  <br>
+  <br>
+  <div class="reg">
+    <img src="images/Leaderboard_Desktop.svg">
+        <div class="cir" style="background-color:orangered">3</div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+    </div>
+    </pre>
+    <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+</div>
+<!-----------------------------             4TH REGION                  -------------------------->
+<br>
+  <br>
+  <br>
+  <div class="reg">
+    <img src="images/Leaderboard_Desktop.svg">
+        <div class="d"><b>4</b></div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+    </div>
+    </pre>
+    <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+</div>
+ <!----------------------------             5TH REGION                      ---------------------------->
+<br>
+  <br>
+  <br>
+  <div class="reg">
+    <img src="images/Leaderboard_Desktop.svg">
+        <div class="d"><b>5</b></div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+    </div>
+    </pre>
+    <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+</div>
+<!------------------------                         BREAK            ----------------->
+<div style="font-size: 60px; margin-left: 500px; color:slategray;">...</div>
+
+ <!----------------------------             124TH REGION                      ---------------------------->
+<div class="reg">
+    <img src="images/Leaderboard_Desktop.svg">
+        <div class="d"><b>124</b></div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+    </div>
+    </pre>
+    <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+</div>
+
+ <!----------------------------             125TH REGION                      ---------------------------->
+<br>
+<br>
+<br>
+<div class="reg">
+    <img src="images/Leaderboard_Desktop.svg">
+        <div class="d"><b>125</b></div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+    </div>
+    </pre>
+    <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+</div>
+
+ <!----------------------------             126TH REGION                      ---------------------------->
+<br>
+<br>
+<br>
+<div class="reg">
+    <img src="images/Leaderboard_Desktop.svg">
+        <div class="d"><b>126</b></div>  
+<pre class="fo"><div style="color: purple; margin-top: 5px;">             <samp style="font-size: 20px;"><b>NIGHT OWLS </samp>           <samp style="font-size: 15px;">MATCHES         WINS          BONUS SCORE </samp>
+            <samp style="color:darkgrey; font-size: 15px;"> LOREM UPSUM </samp>     <samp style="color: black; font-size:15px ;">        24              20            521 </b> </samp>                                                   
+    </div>
+    </pre>
+    <div class="dp"><samp style="color:purple; font-size: 20px;">1570  +</samp></div>
+</div>
+</div>
+<!-----------------------              TOURNAMENT DETAILS                --------------->
+
+<h1 class="boh">ABOUT THE TOURNAMENT</h1>
+<p style="border: hidden; margin-left: 50px;">Compete against the best teams across Southeast Aisa. Battle online and then take<br> 
+    your team to the finals for a chance to win $150K USD. Defy the limits!</p><br>
+
+
+
+<!-----------------------              TOURNAMENT SCHEDULE              ----------------------->
+<div class="sc">
+    <h1 style="text-align: center; padding-top: 40px;">TOURNAMENT SCHEDULE</h1>
+   <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>             15 APRIL-15 JULY</b>             <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+   <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>             15 APRIL-15 JULY </b>             <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+   <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>             15 APRIL-15 JULY </b>             <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+   <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>             15 APRIL-15 JULY</b>             <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+   <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>             15 APRIL-15 JULY </b>             <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre> 
+  
+  
+   <!----------------             I AM GAME PATTERN DETAILS           --------------------->
+
+  <p><samp class="gm"><b>I'M GAME</b></samp><img style="margin-left: 600px;" src="images/Schedule_Mobile.svg" width="150px" height="70px"> </p>
+</div>
+<br>
+
+
+<h1 class="boh"> FREQUENTLY ASKED QUESTIONS</h1>
+
+<!----------------------         FREQUENTLY ASKED QUESTION DETAILS           --------------- -->
+
+<p class="qu"> <samp class="tc"><b>WHAT ARE THE OFFICIAL RULES OF GES NICE?</b><samp style=" position: absolute; right: 380px;">+</samp> </samp></p>
+<p class="qu"> <samp class="tc"><b>WHAT ARE THE OFFICIAL RULES OF GES NICE?</b><samp style=" position: absolute; right: 380px;">+</samp> </samp></p>
+<div style="background-color: white; width: 1040px; margin-left: 100px; padding: 10px;">
+    <p><samp class="tc"><b>WHAT ARE THE OFFICIAL RULES OF GES NICE?</b><samp style=" position: absolute; right: 380px;">-</samp> </samp></p>
+    <p style="padding-left:30px; font-size: 18px;">Terms  must have at least 3 players in the starting lineup with a valid residency(permanent <br>resident or citizenship) in the country to complete in the region. </p>
+</div>
+<p class="qu"> <samp class="tc"><b>WHAT ARE THE OFFICIAL RULES OF GES NICE?</b><samp style=" position: absolute; right: 380px;">+</samp> </samp></p>
+
+<!--------------          FEATURED OF THE VEDIOS DETAILS             ---------------->
+<h1 class="boh"> FEATURED VIDEOS</h1>
+<div style="margin-left: 50px;">
+<img src="images/COD-Banner_Desktop.jpeg" width="400px" height="230px" >
+<img style="padding-left: 20px;" src="images/Tambola-Banner_Desktop.jpeg" width="400px" height="230px">
+<img style="padding-left: 20px;" src="images/FeaturedArticles.png" width="400px" height="230px">
+</div>
+<!-------------------         GAME PRODUCTS DETAILS           ----------------->
+<h1 class="boh"> FEATURED VIDEOS</h1>
+
+<!----------------------            PRODUCT 1                ---------------->
+
+<div class="responsive">
+    <div class="gallery">
+        <img class="pb" src="images/GamingProducts1.png">
+        <div style="font-size: 20px; padding: 10px 0px;"> <b>MOUSE, ALIENWARE</b></div>
+         <div style="font-size: 20px; color: purple;"><b>$92</b></div>
+    </div>
+</div>
+
+ <!----------------------            PRODUCT 2                ---------------->
+
+<div class="responsive">
+<div class="gallery">
+    <img class="pb" src="images/GamingProducts2.png">
+        <div style="font-size: 20px; padding: 10px 0px;"> <b>GAMING KEYBOARD, DELL</b></div>
+         <div style="font-size: 20px; color: purple;"><b>$220</b></div>
+    </div>
+</div>
+
+<!----------------------            PRODUCT 3                ---------------->
+
+<div class="responsive">
+    <div class="gallery">
+        <img  class="pb" src="images/GamingProducts3.png">
+            <div style="font-size: 20px; padding: 10px 0px;"> <b>LOGITECH G432</b></div>
+             <div style="font-size: 20px; color: purple;"><b>$310</b></div>
+        </div>
+    </div>
+ <!-------------------         FEATURED PLAYERS            ---------------------->
+
+ <div class="fpb">
+    <h1 class="fboh"> FEATURED PLAYERS</h1>
+
+    <!--------------------------     ONE                     --------------------------------->
+    <div class="responsive">
+        <div class="bg">
+            <h3 style="text-align: center; color: purple;"> SAM  NEWMAMN</h3>
+        <pre><b>
+      <samp style="font-size: 20px;" >4789.5       81.2%</samp>       
+       <samp style="color: purple;">RATING            WIN RATIO</samp> 
+        <br>
+        <samp style="font-size: 20px;" >26         TANK</samp>
+        <samp style="color: purple;">AGE            PLAYER ROLE</samp></b>
+         </pre>     
+        </div>
+    </div>
+ <!--------------------------     TWO                     --------------------------------->
+    <div class="responsive">
+        <div class="bg">
+            <h3 style="text-align: center; color: purple;"> JOAN  GREY</h3>
+        <pre><b>
+      <samp style="font-size: 20px;" >4789.5       81.2%</samp>       
+       <samp style="color: purple;">RATING            WIN RATIO</samp> 
+        <br>
+        <samp style="font-size: 20px;" >26         TANK</samp>
+        <samp style="color: purple;">AGE            PLAYER ROLE</samp></b>
+         </pre>     
+        </div>
+    </div>
+<!--------------------------     THREE                    --------------------------------->
+    <div class="responsive">
+        <div class="bg">
+            <h3 style="text-align: center; color: purple;"> RICHARD  SMITH</h3>
+        <pre><b>
+      <samp style="font-size: 20px;" >4789.5       81.2%</samp>       
+       <samp style="color: purple;">RATING            WIN RATIO</samp> 
+        <br>
+        <samp style="font-size: 20px;" >26         TANK</samp>
+        <samp style="color: purple;">AGE            PLAYER ROLE</samp></b>
+         </pre>     
+        </div>
+    </div>
+ </div>
+
+ <!------------------------     FEATURED ARTICLES           ------------------------------------->
+
+ <h1 class="boh"> FEATURED ARTICLES</h1>
+
+<!--------------------------     ONE                     --------------------------------->
+
+ <div class="responsive-ar"> 
+     <div class="abg">
+       <p><img src="images/FeaturedArticles.png"><samp class="dt">24TH OCTOBER 2020</samp></p>
+       <h3 style="margin-left: 35px;"> THE RISE OF ESPORTS & <br> WHAT IT MEANS FOR <br>GAMERS</h3>
+       <pre style="margin-left: 35px; "><span style="color: purple; font-size: 10px; "> <i class='fas fa-external-link-alt fa-lg'>  PROGAMES.COM</i>  </span>    <b>JOHN DOE</b></pre> 
+     </div>
+ </div>
+ 
+ <!--------------------------     TWO                     --------------------------------->
+
+ <div class="responsive-ar"> 
+    <div class="abg">
+      <p><img src="images/FeaturedArticles.png"><samp class="dt">24TH OCTOBER 2020</samp></p>
+      <h3 style="margin-left: 35px;"> THE RISE OF ESPORTS & <br> WHAT IT MEANS FOR <br>GAMERS</h3>
+      <pre style="margin-left: 35px; "><span style="color: purple; font-size: 10px; "> <i class='fas fa-external-link-alt fa-lg'>  PROGAMES.COM</i>  </span>    <b>JOHN DOE</b></pre> 
+    </div>
+</div>
+
+<!--------------------------     THREE                     --------------------------------->
+
+<div class="responsive-ar"> 
+    <div class="abg">
+      <p><img src="images/FeaturedArticles.png"><samp class="dt">24TH OCTOBER 2020</samp></p>
+      <h3 style="margin-left: 35px;"> THE RISE OF ESPORTS & <br> WHAT IT MEANS FOR <br>GAMERS</h3>
+      <pre style="margin-left: 35px; "><span style="color: purple; font-size: 10px; "> <i class='fas fa-external-link-alt fa-lg'>  PROGAMES.COM</i>  </span>    <b>JOHN DOE</b></pre> 
+    </div>
+</div>
+  <br>
+<!-------------------         PAGE BOTTOM FEATURES               ------------------------------------->
+<div class="container">
+    <img  style="margin-top: 80px;" src="images/Footer_Desktop.jpeg"  width="1500px" height="200px">
+    <pre class="text-logo"> <img src="images/Logo.png" width="150px"> </pre>      <!---     LOGO   ---->
+    <pre class="text1">HOME    GAMES    NEWSFEED    SHOP      CONTACT US</pre>     <!---     TEXT1   ---->
+    <pre class="text2"> TERMS OF SERVICE     <samp class="pr" >    PRIVACY POLICY</samp>  <!---     TEXT2   ---->
+             <div style="color: blueviolet;">        ALL RIGHTS RESERVED 2020</div>
+    </pre>
+</div>
+ 
+  </body>
+  </html>
