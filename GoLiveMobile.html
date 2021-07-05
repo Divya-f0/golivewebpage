@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GoLiveMobileapp</title>
+        <style>
+
+            #landing{
+                max-width: 200px;
+                margin: auto;
+                background-color: rgb(211, 211, 211,0.2);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 3px;
+                box-shadow: 5px 5px 5px  lightgray;
+            }
+            #df{
+                display: flex;
+            }
+            .regis{
+                border: 1px solid purple;
+                border-bottom-left-radius: 40% ;
+                border-top-right-radius: 40%;
+                height: 3px;
+                padding: 3px;
+                margin-left:100px;
+                margin-top: 3px;
+            }
+            .navg{
+                
+                font-size: 10px;
+                padding-left: 8px;
+                margin-top: 2px;
+
+            }
+            .part{
+                background: url(images/CEAT-Banner_Desktop.jpeg) no-repeat;
+                background-size: 100%;
+                text-align: center;
+                padding: 2px;
+
+            }
+            .part td{
+                font-size: 2px;
+                color: white;
+            }
+            .line{
+                line-height: 1px;
+            }
+            .play{
+                border: 1px solid blueviolet;
+                border-radius: 3px;
+                padding: 3px 3px;
+                margin: 0px 85px;
+                margin-top: 5px;
+                color: white;
+                background-color: blueviolet;
+            }
+            #wbc{
+                background-color: white;
+                font-size: 3px;
+                text-align: center;
+                margin: 0 30px;
+                padding: 2px 0px;
+            }
+             .pcolo{
+                color: purple;
+            }
+
+            #wbc td{
+                color: purple;
+            }
+
+            h6{
+                font-size:5px;
+                font-weight: 100px;
+
+            }
+            .card1{
+                width: 20px;
+                margin-left: 60px;
+                padding: 3px 6px;
+            }
+            .card2{
+                width: 30px;
+            }
+
+            .sel{
+                border: solid blueviolet;
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+                font-size: 5px;
+                margin: 0px 50px;
+                padding: 2px 0px;
+                border-radius:2px;
+                position: absolute;
+                top: 180px;
+            }
+            .triangle-right {
+                border-top: 3px solid transparent;
+                border-left: 4px solid white;
+                border-bottom: 3px solid transparent;
+            }
+            .triangle-left {
+                border-top: 3px solid transparent;
+                border-right: 4px solid white;
+                border-bottom: 3px solid transparent;
+            }
+
+            .det{
+                    background-color: white;
+                    padding: 15px;
+                    margin-top: 10px;
+                }
+
+            .led{
+                background: url(images/Leaderboard_Desktop.svg) no-repeat;
+                background-size: 100%;
+                font-size: 3px;
+            }
+            .cir{
+                border:1px hidden;
+                border-radius: 100%;
+                margin: 3px;
+                padding: 3px ;
+            }
+            .num{
+                margin: 6px;
+            }
+            .tsb{
+                background-color: white;
+                padding: 10px;
+                margin-top: 10px;
+                height: 105px;
+            }
+
+            #hed{
+                border-left:1px solid purple;
+                text-indent: 5px; 
+                margin-left: 20px;
+                margin-top: 13px;
+                font-size: 8px;
+            }
+
+            p{
+                margin-left: 20px;
+                font-size: 4px;
+            }
+
+            h2{
+                font-size: 8px;
+                text-align: center;
+                font-weight: 100px;
+            }
+
+            .tou{
+                background: url(images/Schedule_Desktop.svg) no-repeat; 
+                background-size: 100%;
+                font-size: 3px;
+                padding: 5px 15px;
+            }
+
+            .gam{
+                border: 1px solid blueviolet;
+                text-align: center;
+                border-radius: 3px;
+                padding: 3px 3px;
+                margin: 0px 75px;
+                margin-top: 8px;
+                color: white;
+                background-color: blueviolet;
+            }
+
+            .faq{
+                background: url(images/Leaderboard_Mobile.svg) no-repeat;
+                background-size:83%;
+                font-size: 4px;
+                padding: 5px 5px;
+                color: blueviolet;
+                margin-left: 30px;
+            }
+            #faqs{
+                background: white;
+                margin: 0px 30px;
+                padding: 3px 5px;
+            }
+            .tc{
+                font-size: 4px;
+                color: blueviolet;
+                /*padding: 5px 5px;*/
+            }
+            .tcs{
+                font-size: 3px;
+                margin-left: 5px;
+            }
+            .p_responsive {
+                padding: 4px;
+                float: left;
+                width: 50px;
+            }
+
+                /*GAME PRODUCTS POSITION*/
+
+            .gallery {                 
+                border: hidden;
+                margin-left: 20px;
+                width: 50px;
+            }
+            .pb{
+                background-color: white;
+                width: 50px;
+            }
+
+            .fpb{
+                background-image: url(images/RegisterBG_RightPanel.jpeg);
+                background-size: 100%;
+                margin-top: 60px;
+                padding: 3px;
+                
+            }
+            .bg{
+                background-color: white;
+                width: 40px;
+                padding: 1px 4px;
+                margin-left: 10px;
+            }
+            h4{
+                text-align: center;
+            }
+
+            .bg table, th, td{
+                font-size: 2px;
+            }
+
+            .responsive-ar {
+                float: left;
+                padding-left: 7px;
+            }
+            .abg{
+                border: hidden;
+                width: 55px;
+                background-color: white;
+            }
+            .date{
+                border: 1px solid darkviolet;
+                width: 25px;
+                text-align: center;
+                background-color:darkviolet;
+                font-size: 2px;
+                color: white;
+                margin-left: 5px;
+            }
+            .responsive-ar td{
+                font-size: 2px;
+
+            }
+            h3{
+                margin-left: 5px;
+            }
+            footer{
+                background: url(images/Footer_Desktop.jpeg) no-repeat;
+                background-size: 100%;
+                margin-top: 80px;
+                color: white;
+                display: flex;
+                padding: 6px;
+                font-size: 3px;
+            }
+            samp{
+                border-left: 1px solid violet;
+                padding-left: 5px;
+    
+            }
+            pre{
+                margin-left: 15px;
+            }
+            .left{
+                width: 30px ;
+                padding: 0px 5px;
+            }
+            footer p{
+                font-size: 3px;
+                text-align: center;
+                color: blueviolet;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="landing">
+             <div id="df">
+                <!--------------           LOGO ON TO LEFT             ---------------------------------->
+                <img  src="images/GoGame_Logo-01.png" width="50px">
+
+                <!-----------------           REGISETR ICON ON TOP RIGHT AND NAVIGATION BAR          ------------------------>
+
+                <div class="regis">REGISTER</div>
+                <div class="navg">&#9868;</div>
+             </div>
+
+             <!---------------             PARTNER DETAILS             ---------------------------->
+
+            <div class="part">
+                <div><img  src="images/Logo_Desktop.png" width="25px"></div>
+                <img src="images/Login_UpperLogo1.png" width="20px">
+                <img src="images/Login_UpperLogo2.png" width="20px">
+                
+                <table align="center">
+                    <tr>
+                        <td>PLATFORM PARTNER</td>
+                        <td>LIFESTYLE PARTNER</td>
+                    </tr>
+                </table>
+                
+                <div class="play">PLAY NOW</div>
+            </div>
+
+             <!---------------               PLAY NOW BUTTON POSITION SETTING               ------------------------------------>
+             <div id="play">PLAY NOW</div>
+
+            <!-----------------        DETAILS AND PRICE OF THE GAME               -------------------------------->
+
+            <div id="wbc">
+                <p class="pcolo">STARTS 25TH APRIL 2020 / 16:00 / HYDERABAD</p>
+                <table align="center">
+                    <tr><th>$150k</th><th>4v4</th><th>1570*</th><th>PC</th></tr>
+                    <tr><td>PRICE MONEY</td><td>PLAY MODE</td><td>TEAMS</td><td>PLATFLOM</td></tr>
+                </table>
+
+            </div>
+
+            <!---------------                CARD DETAILS                ----------------->
+
+            <h6 style="text-align: center;">TOURNAMENT LEADERBOARD</h6>
+            <img class="card1" src="images/GameCard1.png" >
+            <img class="card2"  src="images/GameCard2.png">
+
+            <!---------------------            SELECTION BACKGROUND DETAILS REGION        ------------------------>
+
+            <div class="sel">
+                <div id="df">
+                    <div class="triangle-right"></div>  
+                    <div style="padding: 0px 14px;">SELECT YOUR REGION </div>
+                    <div class="triangle-left"></div>
+
+                </div>
+            </div>  
+                
+               
+
+            <!---------------              REGIONAL DETAILS                 -------------------->
+            <div class="det">   
+                
+                <!----------------------------             1ST REGION                      ---------------------------->
+                <div class="led">
+                   <div id="df">
+                        <div class="cir" style="background-color: yellow;">1</div>  
+                        <table>
+                            <tr>
+                                <td>NIGHT OWLS</td>
+                                <td>MATCHES</td>
+                                <td>WINS</td>
+                                <td>BONUS SCORE</td>
+                            </tr>
+                            <tr>
+                                <td>LOREM UPSUM</td>
+                                <td>24</td>
+                                <td>20</td>
+                                <td>521</td>
+                            </tr>
+                        </table>
+                        <p class="dp">1570  +</p>
+                   </div>
+                </div>
+  <!----------------------------             2ND REGION                      ---------------------------->
+                    <div class="led">
+                        <div id="df">
+                            <div class="cir" style="background-color: silver;">2</div>  
+                            <table>
+                                <tr>
+                                    <td>NIGHT OWLS</td>
+                                    <td>MATCHES</td>
+                                    <td>WINS</td>
+                                    <td>BONUS SCORE</td>
+                                </tr>
+                                <tr>
+                                    <td>LOREM UPSUM</td>
+                                    <td>24</td>
+                                    <td>20</td>
+                                    <td>521</td>
+                                </tr>
+                            </table>
+                            <p class="dp">1570  +</p>
+                       </div>
+                    </div>
+<!--------------------------        3RD REGION           -------------------------->
+                    
+                    <div class="led">
+                        <div id="df">
+                            <div class="cir" style="background-color: orangered">3</div>  
+                            <table>
+                                <tr>
+                                    <td>NIGHT OWLS</td>
+                                    <td>MATCHES</td>
+                                    <td>WINS</td>
+                                    <td>BONUS SCORE</td>
+                                </tr>
+                                <tr>
+                                    <td>LOREM UPSUM</td>
+                                    <td>24</td>
+                                    <td>20</td>
+                                    <td>521</td>
+                                </tr>
+                            </table>
+                            <p class="dp">1570  +</p>
+                       </div>
+                    </div>
+ <!-----------------------------             4TH REGION                  -------------------------->
+                    
+                    <div class="led">
+                        <div id="df">
+                            <div class="num">4</div>  
+                            <table>
+                                <tr>
+                                    <td>NIGHT OWLS</td>
+                                    <td>MATCHES</td>
+                                    <td>WINS</td>
+                                    <td>BONUS SCORE</td>
+                                </tr>
+                                <tr>
+                                    <td>LOREM UPSUM</td>
+                                    <td>24</td>
+                                    <td>20</td>
+                                    <td>521</td>
+                                </tr>
+                            </table>
+                            <p class="dp">1570  +</p>
+                       </div>
+                    </div>
+
+<!----------------------------             5TH REGION                      ---------------------------->
+                    
+                   <div class="led">
+                    <div id="df">
+                        <div class="num">5</div> 
+                        <table>
+                            <tr>
+                                <td>NIGHT OWLS</td>
+                                <td>MATCHES</td>
+                                <td>WINS</td>
+                                <td>BONUS SCORE</td>
+                            </tr>
+                            <tr>
+                                <td>LOREM UPSUM</td>
+                                <td>24</td>
+                                <td>20</td>
+                                <td>521</td>
+                            </tr>
+                        </table>
+                        <p class="dp">1570  +</p>
+                   </div>
+                </div>
+
+ <!------------------------                         BREAK            ----------------->
+
+
+ <!----------------------------             124TH REGION                      ---------------------------->
+
+                   <div class="led">
+                    <div id="df">
+                        <div class="num">124</div>
+                        <table>
+                            <tr>
+                                <td>NIGHT OWLS</td>
+                                <td>MATCHES</td>
+                                <td>WINS</td>
+                                <td>BONUS SCORE</td>
+                            </tr>
+                            <tr>
+                                <td>LOREM UPSUM</td>
+                                <td>24</td>
+                                <td>20</td>
+                                <td>521</td>
+                            </tr>
+                        </table>
+                        <p class="dp">1570  +</p>
+                   </div>
+                </div>
+
+<!----------------------------             125TH REGION                      ---------------------------->
+                   
+                   <div class="led">
+                    <div id="df">
+                        <div class="num">125</div>
+                        <table>
+                            <tr>
+                                <td>NIGHT OWLS</td>
+                                <td>MATCHES</td>
+                                <td>WINS</td>
+                                <td>BONUS SCORE</td>
+                            </tr>
+                            <tr>
+                                <td>LOREM UPSUM</td>
+                                <td>24</td>
+                                <td>20</td>
+                                <td>521</td>
+                            </tr>
+                        </table>
+                        <p class="dp">1570  +</p>
+                   </div>
+                </div>
+
+<!----------------------------             126TH REGION                      ---------------------------->
+
+                    <div class="led">
+                        <div id="df">
+                            <div class="num">126</div>
+                            <table>
+                                <tr>
+                                    <td>NIGHT OWLS</td>
+                                    <td>MATCHES</td>
+                                    <td>WINS</td>
+                                    <td>BONUS SCORE</td>
+                                </tr>
+                                <tr>
+                                    <td>LOREM UPSUM</td>
+                                    <td>24</td>
+                                    <td>20</td>
+                                    <td>521</td>
+                                </tr>
+                            </table>
+                            <p class="dp">1570  +</p>
+                       </div>
+                    </div>
+
+            </div>        
+
+            <!-----------------------              TOURNAMENT DETAILS                --------------->
+
+            <h1 id="hed">ABOUT THE TOURNAMENT</h1>
+            <p>Compete against the best teams across Southeast Aisa. Battle online and then take<br> 
+                your team to the finals for a chance to win $150K USD. Defy the limits!</p>
+
+            <!-----------------------              TOURNAMENT SCHEDULE              ----------------------->
+           
+            <div class="tsb">
+                <h2>TOURNAMENT SCHEDULE</h2>
+                <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>               15 APRIL-15 JULY</b>               <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+                <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>               15 APRIL-15 JULY</b>               <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+                <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>               15 APRIL-15 JULY</b>               <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+                <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>               15 APRIL-15 JULY</b>               <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre>
+                <pre class="tou"><span style="color: purple;"><b>REGISTRATION</span>               15 APRIL-15 JULY</b>               <span style="color:silver;"> MAXIMUM 20K TEAMS</span></pre> 
+                
+                <!----------------             I AM GAME PATTERN DETAILS           --------------------->
+                 <p class="gam">I'M GAME</p>
+            
+                 </div>             
+            <h1 id="hed"> FREQUENTLY ASKED QUESTIONS</h1>
+
+            <!----------------------         FREQUENTLY ASKED QUESTION DETAILS           --------------- -->
+             
+
+            <pre class="faq"> WHAT ARE THE OFFICIAL RULES OF GES NICE?                +</pre>
+            <pre class="faq"> WHAT ARE THE OFFICIAL RULES OF GES NICE?                +</pre>
+            <div id="faqs">
+                <pre class="tc">WHAT ARE THE OFFICIAL RULES OF GES NICE?                 -</pre>
+                <div class="tcs">Terms  must have at least 3 players in the starting lineup with a valid residency(permanent <br>resident or citizenship) in the country to complete in the region. </div>
+            </div>
+            <pre class="faq"> WHAT ARE THE OFFICIAL RULES OF GES NICE?                +</pre>
+
+            <!--------------          FEATURED OF THE VEDIOS DETAILS             ---------------->
+            
+            <h1 id="hed"> FEATURED VIDEOS</h1>
+            <div style="margin-left: 20px;">
+                <img src="images/COD-Banner_Desktop.jpeg" width="30%" height="30px" >
+                <img src="images/Tambola-Banner_Desktop.jpeg" width="30%" height="30px">
+                <img  src="images/FeaturedArticles.png" width="30%" height="30px">
+            </div>
+
+            <!-------------------         GAME PRODUCTS DETAILS           ----------------->
+            <h1 id="hed"> FEATURED VIDEOS</h1>
+
+            <!----------------------            PRODUCT 1                ---------------->
+
+            <div class="p_responsive">
+                <div class="gallery">
+                    <img class="pb" src="images/GamingProducts1.png">
+                    <div> <b>MOUSE, ALIENWARE</b></div>
+                    <div><b>$92</b></div>
+                </div>
+            </div>
+
+            <!----------------------            PRODUCT 2                ---------------->
+
+            <div class="p_responsive">
+            <div class="gallery">
+                <img class="pb" src="images/GamingProducts2.png">
+                    <div> <b>GAMING KEYBOARD, DELL</b></div>
+                    <div><b>$220</b></div>
+                </div>
+            </div>
+
+            <!----------------------            PRODUCT 3                ---------------->
+
+            <div class="p_responsive">
+                <div class="gallery">
+                    <img  class="pb" src="images/GamingProducts3.png">
+                        <div> <b>LOGITECH G432</b></div>
+                        <div><b>$310</b></div>
+                </div>
+             </div>
+  
+            <!-------------------         FEATURED PLAYERS            ---------------------->
+
+            <div class="fpb">
+                <h1 id="hed"> FEATURED PLAYERS</h1>
+                <div id="df">
+                <!--------------------------     ONE                     --------------------------------->
+                    <div class="bg" style="margin-left: 20px;">
+                        <h4>SAM  NEWMAMN</h4>
+                        <table align="center">
+                            <tr>
+                                <th>4789.5</th><th>81.2%</th>
+                            </tr>
+                            <tr>
+                                <td>RATING</td><td> WIN RATIO</td>
+                            </tr>
+                            <tr>
+                                <th>26</th><th> TANK</th>
+                            </tr>
+                            <tr>
+                                <td>AGE</td><td> PLAYER ROLE</td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                     <!--------------------------     TWO                     --------------------------------->
+                
+                    <div class="bg">
+                        <h4>JOAN GREY</h4>
+                        <table align="center">
+                            <tr>
+                                <th>4789.5</th><th>81.2%</th>
+                            </tr>
+                            <tr>
+                                <td>RATING</td><td> WIN RATIO</td>
+                            </tr>
+                            <tr>
+                                <th>26</th><th> TANK</th>
+                            </tr>
+                            <tr>
+                                <td>AGE</td><td> PLAYER ROLE</td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                 <!--------------------------     THREE                    --------------------------------->
+
+                    <div class="bg">
+                        <h4>RICHARD  SMITH</h4>
+                        <table align="center">
+                            <tr>
+                                <th>4789.5</th><th>81.2%</th>
+                            </tr>
+                            <tr>
+                                <td>RATING</td><td> WIN RATIO</td>
+                            </tr>
+                            <tr>
+                                <th>26</th><th> TANK</th>
+                            </tr>
+                            <tr>
+                                <td>AGE</td><td> PLAYER ROLE</td>
+                            </tr>
+                        </table>
+                    </div>
+             
+                </div>
+            </div>
+
+            
+            <!------------------------     FEATURED ARTICLES           ------------------------------------->
+
+            <h1 id="hed"> FEATURED ARTICLES</h1>
+
+            <!--------------------------     ONE                     --------------------------------->
+            
+            <div class="responsive-ar"> 
+                <div class="abg" style="margin-left: 14px;">
+                    <img  src="images/FeaturedArticles.png" width="55px">
+                    <div class="date">24TH OCTOBER 2020</div>
+                    <h3> THE RISE OF ESPORTS & <br> WHAT IT MEANS FOR <br>GAMERS</h3>
+                    <table>
+                        <tr>
+                            <td><i class='fas fa-external-link-alt fa-lg'></i>PROGAMES.COM</td>
+                            <td>JOHN DOE</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <!--------------------------     TWO                     --------------------------------->
+            
+            <div class="responsive-ar"> 
+                <div class="abg">
+                    <img src="images/FeaturedArticles.png" width="55px">
+                    <p class="date">24TH OCTOBER 2020</p>
+                    <h3> THE RISE OF ESPORTS & <br> WHAT IT MEANS FOR <br>GAMERS</h3>
+                    <table>
+                        <tr>
+                            <td><i class='fas fa-external-link-alt fa-lg'></i>PROGAMES.COM</td>
+                            <td>JOHN DOE</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <!--------------------------     THREE                     --------------------------------->
+            
+            <div class="responsive-ar"> 
+                <div class="abg">
+                        <img src="images/FeaturedArticles.png" width="55px">
+                        <p class="date">24TH OCTOBER 2020</p>
+                   
+                    <h3> THE RISE OF ESPORTS & <br> WHAT IT MEANS FOR <br>GAMERS</h3>
+                    <table>
+                        <tr>
+                            <td><i class='fas fa-external-link-alt fa-lg'></i>PROGAMES.COM</td>
+                            <td>JOHN DOE</td>
+                        </tr>
+                    </table> 
+                </div>
+            </div>
+
+            <!-------------------         PAGE BOTTOM FEATURES               ------------------------------------->
+
+            <footer>
+                <img class="left" src="images/Logo.png" width="5px" height="10px">
+                <div class="right">
+                    <table   width="100%">
+                        <tr>
+                            <td>HOME</td>
+                            <td>GAMES</td>
+                            <td>NEWSFEED</td>
+                            <td>SHOP</td>
+                            <td>CONTACT US</td>
+                        </tr>
+                    </table>
+                    <pre>TERMS OF SERVICE     <samp>PRIVACY POLICY </samp></pre>
+                    <p> ALL RIGHTS RESERVED 2020</p>
+                </div>    
+               
+
+            </footer>
+
+        </div>
+    </body>
+</html>
